@@ -94,6 +94,10 @@ input {
     .instruction-mobile {
         display: flex;
     }
+    
+    form {
+    margin-top: 20px;
+}
   }
 
 
@@ -103,6 +107,9 @@ input {
         width: 100%;
         height: 100%;
     }
+        form {
+    margin-top: 5px;
+}
 
     .todo {
         position: absolute;
