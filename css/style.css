@@ -86,7 +86,7 @@ input {
     justify-content: space-between;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1123px) {
 
     .instruction {
         display: none
