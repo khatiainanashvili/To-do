@@ -1,69 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: aliceblue;
-    color: #444;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Poppins;
-}
-
-.container{
-
-    background-image: url(../img/squitward.png);
-    width: 70%;
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-form {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.422);
-    max-width: 100%;
-    width: 400px;
-    margin-top: 50px;
-}
-input {
-    border: none;
-    color:#444;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    display: block;
-    width: 100%;
-}
-
-.input::placeholder {
-    color: antiquewhite;
-}
-.todo {
-   position: absolute;
-   top: 20%;
-   left: 45%;
-   transform: rotate(17deg);
-}
-
-.todos {
-   position: fixed;
-   padding: 0;
-   margin:0;
- 
-}
 .todos li {
-    
+    list-style:inside;
+    line-height: 1;
+    list-style-type: '- ';
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     padding: 0.5rem 0.5rem;
     font-weight: bold;
+    margin: 0 10px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -86,7 +32,7 @@ input {
     justify-content: space-between;
 }
 
-@media only screen and (max-width: 1123px) {
+@media only screen and (max-width: 769px) {
 
     .instruction {
         display: none
@@ -94,10 +40,13 @@ input {
     .instruction-mobile {
         display: flex;
     }
-    
-    form {
-    margin-top: 20px;
-}
+    .todo {
+        position: absolute;
+        top: 22%;
+        left: 30%;
+        width: 35%;
+        height: 60%;
+     }
   }
 
 
@@ -105,17 +54,13 @@ input {
 
     .container {
         width: 100%;
-        height: 70%;
+        height: 50%;
     }
-        form {
-    margin-top: 5px;
-}
 
     .todo {
         position: absolute;
-        top: 32%;
-        left: 45%;
-        transform: rotate(20deg);
+        width: 38%;
+        left: 30%;
      }
     .todos li {
     
