@@ -1,3 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Poppins;
+}
+
+.container{
+
+    background-image: url(../img/squitward.png);
+    width: 70%;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    
+}
+form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.422);
+    max-width: 100%;
+    width: 400px;
+    margin-top: 50px;
+}
+input {
+    border: none;
+    color:#444;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: antiquewhite;
+}
+.todo {
+   position: absolute;
+   top: 20%;
+   left: 35%;
+   width: 25%;
+   height: 65%;
+   transform: rotate(18deg);
+}
+
+
+.todos {
+   position: fixed;
+   padding: 0;
+   margin:0;
+ 
+}
+
 .todos li {
     list-style:inside;
     line-height: 1;
